@@ -46,6 +46,8 @@ To learn more on how to deploy your model in Algorithmia, check here - https://a
 
 ## Installation
 
+### 先装依赖 sudo apt install libjpeg-dev zlib1g-dev
+
 ### Application tested on:
 
 - python 3.7
@@ -71,7 +73,7 @@ docker run -p 8080:8080 cartoonize
 ```
 
 
-### Using `virtualenv`
+###  Using `virtualenv`  (优选)
 
 1. Make a virtual environment using `virutalenv` and activate it
 ```
@@ -80,11 +82,11 @@ source cartoonize/bin/activate
 ```
 2. Install python dependencies
 ```
-pip install -r requirements.txt
+python3 -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
 ```
 3. Run the webapp. Be sure to set the appropriate values in `config.yaml` file before running the application.
 ```
-python app.py
+python3 app.py
 ```
 
 ### Using [Google Colab](https://colab.research.google.com/drive/1oDhMEVMcsRbe7bt-2A7cDsx44KQpQwuB?usp=sharing)

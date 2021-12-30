@@ -65,7 +65,7 @@ def convert_bytes_to_image(img_bytes):
     return image
 
 @app.route('/')
-@app.route('/cartoonize', methods=["POST", "GET"])
+@app.route('/MetaWorld', methods=["POST", "GET"])
 def cartoonize():
     opts = app.config['OPTS']
     if flask.request.method == 'POST':
